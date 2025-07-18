@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equilibrio Animal | Brochure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root {
+      --azul: #00aaff;
+      --azul-suave: #e6f7ff;
+      --gris-oscuro: #2c3e50;
+      --blanco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--azul-suave);
+      color: var(--gris-oscuro);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #00aaff, #00d9ff);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--azul);
+      margin-bottom: 2rem;
+    }
+
+    .descripcion {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: center;
+      color: #444;
+    }
+
+    .bloques {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .bloque {
+      background: var(--blanco);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .bloque:hover {
+      transform: translateY(-5px);
+    }
+
+    .bloque-icon {
+      margin-bottom: 1rem;
+      color: var(--azul);
+    }
+
+    .bloque h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--gris-oscuro);
+    }
+
+    .bloque p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .equipo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .miembro {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      width: 240px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .miembro:hover {
+      transform: translateY(-5px);
+    }
+
+    .miembro h3 {
+      margin-top: 1rem;
+      color: var(--gris-oscuro);
+    }
+
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .miembro {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header data-aos="fade-down">
+    <h1>Equilibrio Animal</h1>
+    <p>Una solución digital para la gestión eficiente de veterinarias y el bienestar animal.</p>
+  </header>
+
+  <!-- Descripción del Proyecto -->
+  <section data-aos="fade-up">
+    <h2>¿Qué es Equilibrio Animal?</h2>
+    <p class="descripcion">
+      Equilibrio Animal es una aplicación web diseñada para modernizar la gestión de clínicas veterinarias. Permite llevar control total sobre mascotas, dueños, citas, historiales médicos y mucho más. Es intuitiva, rápida y adaptable para todo tipo de veterinarias.
+    </p>
+  </section>
+
+  <!-- Funcionalidades -->
+  <section data-aos="fade-up">
+    <h2>¿Qué ofrece la plataforma?</h2>
+    <div class="bloques">
+      <div class="bloque" data-aos="zoom-in" data-aos-delay="100">
+        <div class="bloque-icon">
+          <i data-lucide="calendar"></i>
+        </div>
+        <h3>Gestión de Citas</h3>
+        <p>Agenda, modifica y cancela citas fácilmente. Organiza tu jornada con claridad.</p>
+      </div>
+      <div class="bloque" data-aos="zoom-in" data-aos-delay="150">
+        <div class="bloque-icon">
+          <i data-lucide="clipboard-list"></i>
+        </div>
+        <h3>Historial Clínico</h3>
+        <p>Guarda y consulta antecedentes médicos de cada paciente de forma organizada.</p>
+      </div>
+      <div class="bloque" data-aos="zoom-in" data-aos-delay="200">
+        <div class="bloque-icon">
+          <i data-lucide="users"></i>
+        </div>
+        <h3>Gestión de Dueños</h3>
+        <p>Administra información de propietarios y mantén una comunicación efectiva.</p>
+      </div>
+      <div class="bloque" data-aos="zoom-in" data-aos-delay="250">
+        <div class="bloque-icon">
+          <i data-lucide="activity"></i>
+        </div>
+        <h3>Seguimiento Médico</h3>
+        <p>Monitorea tratamientos, vacunas y controles periódicos fácilmente.</p>
+      </div>
+      <div class="bloque" data-aos="zoom-in" data-aos-delay="300">
+        <div class="bloque-icon">
+          <i data-lucide="layout-dashboard"></i>
+        </div>
+        <h3>Dashboard Administrativo</h3>
+        <p>Resumen de actividad, estadísticas y alertas para una mejor toma de decisiones.</p>
+      </div>
+      <div class="bloque" data-aos="zoom-in" data-aos-delay="350">
+        <div class="bloque-icon">
+          <i data-lucide="globe"></i>
+        </div>
+        <h3>Acceso Web</h3>
+        <p>Disponible desde cualquier dispositivo con conexión. No requiere instalación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section data-aos="fade-up">
+    <h2>Equipo de Desarrollo</h2>
+    <div class="equipo">
+      <div class="miembro" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Thomas Valencia</h3>
+        <p>Desarrollador Web (Product Owner)</p>
+      </div>
+      <div class="miembro" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Mateo López</h3>
+        <p>Desarrollador Web (SCRUM Master)</p>
+      </div>
+      <div class="miembro" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Saray Vasco</h3>
+        <p>Diseño y Documentación (Product Owner)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Equilibrio Animal · Proyecto desarrollado por Thomas Valencia, Mateo López y Saray Vasco
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    lucide.createIcons();
+  </script>
+</body>
+</html>
